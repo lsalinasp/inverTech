@@ -3,9 +3,7 @@
 section {
     display: flex;
     flex-direction: row-reverse;
-    width: 99.5%;
-
-    margin: -2%;
+    width: 100%;
     margin-left: 2px;
    padding-left: 0%;
    
@@ -20,7 +18,7 @@ section {
 aside {
     background-color: #00AEC7;
    position: relative;
-   margin-right: 2px;
+   margin-right: 300px;
 
 }
 
@@ -52,9 +50,9 @@ aside {
 }
 
 .contenedor-acordeon {
-    width: 100%;
-    max-width: 1170px;
-    margin: auto;
+   margin-left: -290px;
+    
+    
 }
 
 .contenedor-acordeon h2 {
