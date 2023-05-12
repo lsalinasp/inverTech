@@ -1,0 +1,20 @@
+<header>
+
+    <img class="logo" src="../../../assets/img/logo.png" alt="" routerLink="/mainpage">
+    <div class="right">
+        <div><img class="img1" src="../../../assets/img/corazonbueno.png" alt="rachas"> </div>
+
+        <div class="rangogPadre">
+            <div class="rangogHijo" id="rangog" [style.width.px]="80"></div>
+        </div>
+
+        <div><img class="img2" src="../../../assets/img/profile.png" alt="" [routerLink]="['/userinfo']"></div>
+        <span>{{loginService.currentUser.name}}</span>
+    </div>
+
+
+</header>
+
+
+
+<div class="linea"></div>

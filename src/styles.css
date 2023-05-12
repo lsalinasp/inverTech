@@ -1,0 +1,13 @@
+/* You can add global styles to this file, and also import other style files */
+*{
+    font-family: 'Barlow', sans-serif;
+}
+
+.text-danger{
+text-align: start;
+margin-left: 5px;
+}
+
+span{
+  color: red;
+}

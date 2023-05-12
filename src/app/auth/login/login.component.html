@@ -1,0 +1,28 @@
+<app-header></app-header>
+<form class="formulario" [formGroup]="userLogin" (ngSubmit)="registar()">
+    <h1>Ingresar</h1>
+    <div class="contenedor">   
+        <span *ngIf = "userLogin.get('email')?.hasError('required') && userLogin.get('email')?.touched" class="text-danger">
+            El correo es requerido
+        </span>
+        <span *ngIf = "userLogin.get('email')?.hasError('email') && userLogin.get('email')?.touched" class="text-danger">
+             El correo es inválido
+        </span>     
+            <div class="input-contenedor ">
+               <i class="fa-solid fa-envelope icon "></i>
+               <input type="text" placeholder="Correo Electrónico" formControlName="email">
+            </div>    
+        <span *ngIf = "userLogin.get('password')?.hasError('required') && userLogin.get('password')?.touched" class="text-danger">
+            La contraseña es requerida
+        </span>
+            <div class="input-contenedor">
+                <i class="fa-solid fa-key icon"></i>
+                <input type="password" placeholder="Contraseña" formControlName="password" >
+            </div>
+                <input type="submit" value="Ingresar" class="button" [disabled]="userLogin.invalid">
+                <p>Al registrarte aceptas nuestras condiciones de uso y politicas de privacidad</p>
+                <p>¿No tienes cuenta? <a class="link" routerLink="/register">Registrate</a></p>
+                <p>Olvidáste tu contraseña? <a class="link" routerLink="/retrieve-password">Recuperar Contraseña</a><br><br></p>
+    </div>
+</form>
+<app-footer></app-footer>

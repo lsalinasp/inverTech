@@ -1,0 +1,66 @@
+header {
+    display: flex;
+    height: max-content;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-right: 20px;
+}
+
+h1 {
+    font-size: 45px;
+    margin-top: -20px;
+    margin-left: 20px;
+
+}
+
+.app {
+    color: #E3E829;
+    text-shadow: 2.3px 2.3px rgb(196, 193, 193);
+}
+
+.img1 {
+    width: 45px;
+}
+
+.img2 {
+    width: 32px;
+    
+}
+
+.linea {
+    border-top: 3px solid rgb(235, 225, 225);
+    height: 30px;
+    max-width: 100%;
+    padding: 0;
+    margin: 0px auto 0 auto;
+  }
+
+
+  .rangogPadre{
+    width: 200px;
+    height: 20px;
+    background-color: rgb(185, 185, 168);
+    border-radius: 20px;
+}
+
+.rangogHijo{
+    height: 20px;
+    background-color: #E3E829;
+    border-radius: 20px;
+}
+
+.logo{
+    width: 5%;
+    margin-left: 10px;
+}
+
+.right {
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.saludo{
+    font-weight: bold;
+}
